@@ -12,7 +12,6 @@ public class Scenario4 {
         System.setProperty("webdriver.chrome.driver","C:\\Users\\darshb\\Downloads\\selenium\\selenium 4.1.2\\chromdriver\\chromedriver.exe");
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
-
         driver.get("https://www.goibibo.com/");
         driver.findElement(By.xpath("//ul[@class='sc-fvxzrP cCkBwj']/child::li[2]")).click();
         driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/div/div")).click();
@@ -22,7 +21,6 @@ public class Scenario4 {
         driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/div/div[2]/ul/li[1]/div")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[2]/div[2]/div/div[1]/div[2]/div/div[2]/div/input")).sendKeys("seattle");
-
         Thread.sleep(1000);
         driver.findElement(By.xpath("//*[@id=\"autoSuggest-list\"]/li[1]/div")).click();
         Thread.sleep(1000);
@@ -37,5 +35,4 @@ public class Scenario4 {
         driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[2]/div[2]/div/div[1]/div[5]/div[2]/div[3]/a[2]")).click();
         driver.findElement(By.xpath("//span[@class='sc-fHeRUh jHgPBA']")).click();
     }
-
 }
